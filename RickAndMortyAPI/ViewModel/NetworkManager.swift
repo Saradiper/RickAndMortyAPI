@@ -10,7 +10,7 @@ import Foundation
 
 class NetworkManager: ObservableObject {
     @Published var characterArray = [CharacterResponse]()
-    @Published var decodeResponse = [RickAndMortyResponse]()
+    @Published var decodeResponse: RickAndMortyResponse
     @Published var isLoading: Bool = false
     @Published var errorMessage: String? = nil
     

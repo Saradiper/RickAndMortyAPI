@@ -10,8 +10,9 @@
 "error.message.generic" = "Sorry, something went wrong.";
 "error.message.badResponse" = "Sorry, the connection to our server failed.";
 "error.message.unknown" = "Sorry, something went wrong.";
-"error.message.bbadURL" = "Unknown error";
+"error.message.badURL" = "Unknown error";
 "error.message.generic" = "Invalid URL";
+"error.message.sesion" = "URL session error";
 "error.message.parsing" = "Parsing error";
 "error.message.statusCode" = "Bad response with status code ";
 

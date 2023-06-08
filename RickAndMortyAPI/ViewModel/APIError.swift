@@ -19,11 +19,11 @@ enum APIError: Error, CustomStringConvertible {
         //User feedback
         switch self {
         case .badURL, .parsing, .unknown:
-            return "Sorry, something went wrong."
+            return NSLocalizedString("error.message.generic", comment: "")
         case .badResponse(_):
-            return "Sorry, the connection to our server failed."
+            return NSLocalizedString("error.message.badResponse", comment: "")
         case .url(let error):
-            return error?.localizedDescription ?? "Something went wrong."
+            return error?.localizedDescription ?? NSLocalizedString("error.message.generic", comment: "")
         }
     }
     
@@ -31,15 +31,15 @@ enum APIError: Error, CustomStringConvertible {
         //Info for debugging
         switch self {
         case .unknown:
-            return "Unknown error"
+            return NSLocalizedString("error.message.badResponse", comment: "")
         case .badURL:
-            return "invalid URL"
+            return NSLocalizedString("error.message.badURL", comment: "")
         case .url(let error):
-            return error?.localizedDescription ?? "url session error"
+            return error?.localizedDescription ?? NSLocalizedString("error.message.sesion", comment: "")
         case .parsing(let error):
-            return "parsing error \(error?.localizedDescription ?? "")"
+            return NSLocalizedString("error.message.parsing", comment: "") + (error?.localizedDescription ?? "")
         case .badResponse(statusCode: let statusCode):
-            return "bad response with status code  \(statusCode)"
+            return NSLocalizedString("error.message.statusCode", comment: "") + statusCode
         }
     }
     
