@@ -39,7 +39,7 @@ enum APIError: Error, CustomStringConvertible {
         case .parsing(let error):
             return NSLocalizedString("error.message.parsing", comment: "") + (error?.localizedDescription ?? "")
         case .badResponse(statusCode: let statusCode):
-            return NSLocalizedString("error.message.statusCode", comment: "") + statusCode
+            return NSLocalizedString("error.message.statusCode", comment: "") + "\(statusCode)"
         }
     }
     
