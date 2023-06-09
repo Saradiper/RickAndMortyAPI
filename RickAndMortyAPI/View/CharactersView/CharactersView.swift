@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct CharactersView: View {
-//    @ObservedObject var manager = MultiNetworkManager()
     @StateObject var networkManager = NetworkManager()
-//    let characters: [CharacterResponse]
-//    var data: RickAndMortyAPI = RickAndMortyAPI()
     
     var body: some View {
         if networkManager.isLoading {
@@ -21,10 +18,8 @@ struct CharactersView: View {
         } else {
             CharactersView(networkManager: networkManager)
         }
-//            .onAppear {
-//                networkManager.getCharactersData()
-//            }
     }
+        
 }
 
 

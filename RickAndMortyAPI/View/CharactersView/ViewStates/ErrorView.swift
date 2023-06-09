@@ -12,18 +12,36 @@ struct ErrorView: View {
     @ObservedObject var networkManager: NetworkManager
     
     var body: some View {
-        Image("kisspngSickSancheza")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 110)
-        Text(networkManager.errorMessage ?? NSLocalizedString("error.message.generic", comment: ""))
-            .frame(width: 50)
+            VStack {
+                Image("kisspngSickSancheza")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100)
+                
+                Text(networkManager.errorMessage ?? NSLocalizedString("error.message.generic", comment: ""))
+                    .modifier(InformationTextModifier())
+                    
+                Button {
+                    networkManager.getCharactersData(url: URL(string:networkManager.getCharactersUrl()))
+                } label: {
+                    Text("Intalo de nuevo")
+                }
+            }
+        .background(
+            Image("GreenBackground")
+                .renderingMode(.original)
+                .resizable()
+                .modifier(BackgroundImageModifier())
+                .edgesIgnoringSafeArea(.all)
+                
+        )
     }
     
 }
 
 struct ErrorView_Previews: PreviewProvider {
     static var previews: some View {
+//        ErrorView()
         ErrorView(networkManager: NetworkManager())
     }
 }

@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct CharactersListView: View {
-//    let networkManager: NetworkManager
-    //Karin:
     let characters: [CharacterResponse]
     
     var body: some View {
@@ -24,7 +22,6 @@ struct CharactersListView: View {
 
 struct CharactersListView_Previews: PreviewProvider {
     static var previews: some View {
-        CharactersListView(characters: NetworkManager().characterArray)
-//        CharactersListView(characters: NetworkManage.successState().characterArray)
+        CharactersListView(characters: NetworkManager.successState().characterArray)
     }
 }

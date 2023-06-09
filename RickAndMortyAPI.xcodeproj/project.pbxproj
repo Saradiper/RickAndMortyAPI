@@ -24,6 +24,8 @@
 		56D4EF0D2A329B6A006F521C /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D4EF0C2A329B6A006F521C /* InfoResponse.swift */; };
 		56D4EF0F2A329BA4006F521C /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D4EF0E2A329BA4006F521C /* CharacterResponse.swift */; };
 		56D4EF112A329BD0006F521C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D4EF102A329BD0006F521C /* Location.swift */; };
+		56DC0C092A33501A008BE92A /* InformationTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DC0C082A33501A008BE92A /* InformationTextModifier.swift */; };
+		56DC0C0B2A3350B2008BE92A /* BackgroundImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DC0C0A2A3350B2008BE92A /* BackgroundImageModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		56D4EF0C2A329B6A006F521C /* InfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoResponse.swift; sourceTree = "<group>"; };
 		56D4EF0E2A329BA4006F521C /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
 		56D4EF102A329BD0006F521C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		56DC0C082A33501A008BE92A /* InformationTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTextModifier.swift; sourceTree = "<group>"; };
+		56DC0C0A2A3350B2008BE92A /* BackgroundImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 				56D4EEF22A327F93006F521C /* Model */,
 				56D4EEF32A327F9A006F521C /* View */,
 				56D4EEF42A327FB3006F521C /* ViewModel */,
+				56DC0C072A334FF3008BE92A /* ViewModifiers */,
 				56D4EEE82A327F7E006F521C /* Assets.xcassets */,
 				56D4EEEA2A327F7E006F521C /* Preview Content */,
 			);
@@ -152,6 +157,15 @@
 				56D4EEFE2A3280C3006F521C /* ErrorView.swift */,
 			);
 			path = ViewStates;
+			sourceTree = "<group>";
+		};
+		56DC0C072A334FF3008BE92A /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				56DC0C082A33501A008BE92A /* InformationTextModifier.swift */,
+				56DC0C0A2A3350B2008BE92A /* BackgroundImageModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +242,8 @@
 				56D4EEE72A327F7C006F521C /* ContentView.swift in Sources */,
 				56D4EF012A3280F3006F521C /* RickAndMortyResponse.swift in Sources */,
 				56D4EF072A328177006F521C /* NetworkManager.swift in Sources */,
+				56DC0C0B2A3350B2008BE92A /* BackgroundImageModifier.swift in Sources */,
+				56DC0C092A33501A008BE92A /* InformationTextModifier.swift in Sources */,
 				56D4EEFF2A3280C3006F521C /* ErrorView.swift in Sources */,
 				56D4EEE52A327F7C006F521C /* RickAndMortyAPIApp.swift in Sources */,
 				56D4EEFB2A328084006F521C /* CharactersListView.swift in Sources */,

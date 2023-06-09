@@ -7,16 +7,16 @@
 
 
 /* ERROR */
-"error.message.generic" = "Sorry, something went wrong.";
-"error.message.badResponse" = "Sorry, the connection to our server failed.";
-"error.message.unknown" = "Sorry, something went wrong.";
-"error.message.badURL" = "Unknown error";
-"error.message.genericURL" = "Invalid URL";
-"error.message.sesion" = "URL session error";
-"error.message.parsing" = "Parsing error";
-"error.message.statusCode" = "Bad response with status code ";
-
 "error.message.generic" = "¡Cielos, Morty! Parece que hemos tropezado con un fallo técnico";
+"error.message.badResponse" = "¡Oh, jeez! Parece que hemos tenido un error de conexión con nuestro servidor interdimensional";
+"error.message.unknown" = "¡Alerta de anomalía! Algo inesperado ha ocurrido en el tejido espacio-temporal";
+"error.message.badURL" = "¡Wubba lubba dub dub! Hemos encontrado una URL rebelde que no quiere cooperar. Estamos enfrascados en una batalla épica para dominarla y traerla de vuelta al camino correcto";
+"error.message.genericURL" = "¡Oh, cielos! Parece que hemos tropezado con una URL interdimensional defectuosa";
+"error.message.sesion" = "¡Ups! Parece que hemos encontrado un obstáculo en la sesión de URL";
+"error.message.parsing" = "Parece que hemos encontrado un problema de parsing";
+"error.message.statusCode" = "¡Maldición! Hemos obtenido una respuesta no deseada con un código de estado inesperado ";
+
+
 
 
 /* VIEW */

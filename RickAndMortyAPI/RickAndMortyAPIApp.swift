@@ -12,7 +12,7 @@ struct RickAndMortyAPIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .preferredColorScheme(.dark) //TODO: check this if it´s working
+                .preferredColorScheme(.dark)
         }
     }
 }

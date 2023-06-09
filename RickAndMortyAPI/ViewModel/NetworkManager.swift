@@ -27,6 +27,7 @@ class NetworkManager: ObservableObject {
     }
     
     
+    //MARK: Pass URL to implement recursion to load characters from other pages
     func getCharactersData(url: URL?) {
     
         isLoading = true
@@ -41,7 +42,6 @@ class NetworkManager: ObservableObject {
                 switch result {
                 case .failure(let error):
                     self.errorMessage = error.localizedDescription
-                    //Print(error.description)
                     print(error)
                 case .success(let decodedResponse):
                     self.decodeResponse = decodedResponse
@@ -50,8 +50,8 @@ class NetworkManager: ObservableObject {
         }
     }
     
-    //MARK: preview helpers
     
+    //Preview helpers
     static func errorState() -> NetworkManager {
         let fetcher = NetworkManager()
         fetcher.errorMessage = APIError.url(URLError.init(.notConnectedToInternet)).localizedDescription
