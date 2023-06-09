@@ -12,7 +12,7 @@ struct CharactersListView: View {
     let imageSize: CGFloat = 100
     
     let colums = [
-        GridItem(.adaptive(minimum: 120))
+        GridItem(.adaptive(minimum: 150))
     ]
     
     
@@ -24,18 +24,19 @@ struct CharactersListView: View {
                             CharacterDetailView(character: character)
                         } label: {
                             VStack(spacing: 20) {
-                                ImageView(character: character)
-                                    .frame(width: imageSize, height: imageSize)
-                                
-                                Text(character.name)
-                                    .font(.headline)
-                                    .foregroundColor(.white)
+                                    ImageView(character: character)
+                                        .frame(width: imageSize, height: imageSize)
+                                       
+                                    Text(character.name)
+                                        .font(.headline)
+                                        .foregroundColor(.white)
                             }
-                            .modifier(GridModifier())
-                            .overlay(CardGradient())
                         }
                 }
+                    .modifier(GridModifier())
+                    .overlay(CardGradient())
             }
+              
         }
     }
 }

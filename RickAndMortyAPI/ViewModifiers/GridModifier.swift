@@ -11,6 +11,6 @@ struct GridModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .padding(.vertical)
-            .frame(width: 160, height: 190)
+            .frame(width: 170, height: 200)
     }
 }

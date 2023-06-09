@@ -13,12 +13,12 @@ struct CharacterDetailView: View {
     
     var body: some View {
             ScrollView {
-                VStack(spacing: 15) {
+                VStack(spacing: 20) {
                     ImageView(character: character)
                         .frame(width: imageSize, height: imageSize)
                     Text(character.name)
                         .font(.title)
-                    VStack(alignment: .leading) {
+                    VStack(alignment: .leading, spacing: 8) {
                         Text("Species: \(character.species)")
                         if character.type != "" {
                             Text("Type: \(character.type)")
