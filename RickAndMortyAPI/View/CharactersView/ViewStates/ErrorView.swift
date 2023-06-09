@@ -16,17 +16,21 @@ struct ErrorView: View {
                 Image("kisspngSickSancheza")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 100)
+                    .frame(width: 100, height: 140)
                 
                 Text(networkManager.errorMessage ?? NSLocalizedString("error.message.generic", comment: ""))
+                    .foregroundColor(.black)
                     .modifier(InformationTextModifier())
                     
                 Button {
                     networkManager.getCharactersData(url: URL(string:networkManager.getCharactersUrl()))
                 } label: {
-                    Text("Intentalo de nuevo")
+                    Text(NSLocalizedString("button.tryAgain", comment: ""))
+                        .font(Font.body.bold())
+                        .foregroundColor(.white)
                         .modifier(BoxBackground())
                 }
+                .padding()
             }
         .background(
             Image("GreenBackground")
@@ -36,7 +40,9 @@ struct ErrorView: View {
                 .edgesIgnoringSafeArea(.all)
                 
         )
+        .modifier(BoxBackground())
     }
+        
     
 }
 

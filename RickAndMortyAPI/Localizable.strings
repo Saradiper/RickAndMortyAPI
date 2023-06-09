@@ -30,5 +30,13 @@
 "view.about.appInfo" = "On this site, you will find information about your favorite scientist and his unfortunate grandson, along with other prominent characters from the series. This project was developed using the SwiftUI framework";
 
 
+/* BUTTON */
+"button.tryAgain" = "Try again";
+
+"button.mainView.characters" = "Characters";
+"button.mainView.about" = "About the app";
+
+
+
 /* OTHER */
 "isLoading.true.characters" = "Our space portals are materializing the characters...";

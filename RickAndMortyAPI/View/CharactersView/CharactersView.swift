@@ -11,12 +11,14 @@ struct CharactersView: View {
     @StateObject var networkManager = NetworkManager()
     
     var body: some View {
-        if networkManager.isLoading {
-            LoadingView()
-        } else if networkManager.errorMessage != nil {
-            ErrorView(networkManager: networkManager)
-        } else {
-            CharactersListView(characters: networkManager.decodeResponse?.results ?? [])
+        VStack {
+            if networkManager.isLoading {
+                LoadingView()
+            } else if networkManager.errorMessage != nil {
+                ErrorView(networkManager: networkManager)
+            } else {
+                CharactersListView(characters: networkManager.decodeResponse?.results ?? [])
+            }
         }
     }
         

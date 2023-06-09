@@ -53,9 +53,6 @@ struct AboutView: View {
                         }
                         
                     }
-//                }
-            
-//            .background(.black.opacity(0.7))
 
         }
                 .foregroundColor(.white)

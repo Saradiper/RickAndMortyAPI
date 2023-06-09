@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56673C4F2A33CE2100CB232F /* BlueButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56673C4E2A33CE2100CB232F /* BlueButtonModifier.swift */; };
 		568670ED2A3362AE008A4517 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670EC2A3362AE008A4517 /* CharacterDetailView.swift */; };
 		568670EF2A33642D008A4517 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670EE2A33642D008A4517 /* Color-Theme.swift */; };
 		568670F12A336F5B008A4517 /* BoxBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670F02A336F5B008A4517 /* BoxBackground.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56673C4E2A33CE2100CB232F /* BlueButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButtonModifier.swift; sourceTree = "<group>"; };
 		568670EC2A3362AE008A4517 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		568670EE2A33642D008A4517 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		568670F02A336F5B008A4517 /* BoxBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBackground.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				56DC0C0A2A3350B2008BE92A /* BackgroundImageModifier.swift */,
 				568670FA2A339897008A4517 /* ImageGridModifier.swift */,
 				568670F02A336F5B008A4517 /* BoxBackground.swift */,
+				56673C4E2A33CE2100CB232F /* BlueButtonModifier.swift */,
 				568670FC2A339C57008A4517 /* GridModifier.swift */,
 			);
 			path = ViewModifiers;
@@ -274,6 +277,7 @@
 			files = (
 				56D4EEE72A327F7C006F521C /* ContentView.swift in Sources */,
 				56D4EF012A3280F3006F521C /* RickAndMortyResponse.swift in Sources */,
+				56673C4F2A33CE2100CB232F /* BlueButtonModifier.swift in Sources */,
 				56D4EF072A328177006F521C /* NetworkManager.swift in Sources */,
 				56DC0C0B2A3350B2008BE92A /* BackgroundImageModifier.swift in Sources */,
 				568670F32A337267008A4517 /* AboutView.swift in Sources */,

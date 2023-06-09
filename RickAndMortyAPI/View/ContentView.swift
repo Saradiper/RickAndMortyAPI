@@ -10,20 +10,52 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        NavigationView{
-            VStack{
-                NavigationLink {
-                    CharactersView()
-                } label: {
-                    Text("Characters")
+        GeometryReader { geometry in
+            NavigationView {
+                VStack(spacing: 60) {
+                        Image("imgC1")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: geometry.size.width)
+                    
+                    VStack(spacing: 15) {
+                        NavigationLink {
+                            CharactersView()
+                        } label: {
+                            Text(NSLocalizedString("button.mainView.characters", comment: ""))
+                        }
+                        .modifier(BlueButtonModifier())
+                        
+                        NavigationLink {
+                            AboutView()
+                        } label: {
+                            Text(NSLocalizedString("button.mainView.about", comment: ""))
+                        }
+                        .modifier(BlueButtonModifier())
+                        .padding()
+                        Spacer()
+                    }
+                    
+                    Image("Rick-and-Morty")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 260)
+                        .padding()
+                    
                 }
+                .frame(width: geometry.size.width, height: geometry.size.height)
                 
-                NavigationLink("About"){
-                    AboutView()
-                }
-                .padding()
+                .background(.black.opacity(0.1))
+                .background(
+                    Image("DarkStarsSky")
+                        .renderingMode(.original)
+                        .resizable()
+                        .scaledToFill()
+                        .edgesIgnoringSafeArea(.bottom)
+                    
+                )
             }
+           
         }
         
     }
