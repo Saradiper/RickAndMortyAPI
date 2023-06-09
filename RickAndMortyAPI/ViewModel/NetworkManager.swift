@@ -9,8 +9,9 @@ import Foundation
 
 
 class NetworkManager: ObservableObject {
+    //characterArray: For the CharactersListView_Previews
     @Published var characterArray = [CharacterResponse]()
-    @Published var decodeResponse: RickAndMortyResponse
+    @Published var decodeResponse: RickAndMortyResponse? = nil
     @Published var isLoading: Bool = false
     @Published var errorMessage: String? = nil
     
@@ -34,7 +35,6 @@ class NetworkManager: ObservableObject {
         let service = APIService()
         let url = URL(string: getCharactersUrl())
         
-        //MARK: Maybe use weak instead unowned, both don´t create strong reference -> diferences weak: self? unowned: self!
         service.fetchCharactersData(url: url) { [unowned self] result in
             
             DispatchQueue.main.async {
@@ -44,9 +44,8 @@ class NetworkManager: ObservableObject {
                     self.errorMessage = error.localizedDescription
                     //Print(error.description)
                     print(error)
-                case .success(decodeResponse):
-                    self.decodeResponse = decodeResponse
-              
+                case .success(let decodedResponse):
+                    self.decodeResponse = decodedResponse
                 }
             }
         }

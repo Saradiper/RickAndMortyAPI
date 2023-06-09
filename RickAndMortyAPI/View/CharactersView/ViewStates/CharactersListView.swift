@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CharactersListView: View {
 //    let networkManager: NetworkManager
-    //Karin:
     let characters: [CharacterResponse]
     
     var body: some View {

@@ -20,6 +20,5 @@
 /* VIEW */
 "view.profile.candidatePhone" = "(+34) 670 894 500";
 "view.profile.candidateMail" = "diazper.arq@gmail.com";
-"view.profile.candidateHobbies" = "painting, bordgames, climbing";
 
-"view.about.appInfo" = "On this site you can find information about your favorite scientist and his unfortunate grandson. In addition to other characters that appear in the serie, as well as information about them. \nThe purpose of this project was      . This project was generated with framework: swiftUI. For this I made use of an asynchronous function to make requests to the API, the same that youcan visit in: Rick and Morty's API.";
+"view.about.appInfo" = "";

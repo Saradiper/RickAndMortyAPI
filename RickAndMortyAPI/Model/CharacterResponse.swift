@@ -37,7 +37,7 @@ struct CharacterResponse: Codable, Hashable {
         self.url = ""
         self.created = ""
     }
-    
+
     
     static func createDefault() -> CharacterResponse {
         var characterResponse = CharacterResponse()
