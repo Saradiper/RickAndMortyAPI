@@ -61,7 +61,6 @@ struct APIService {
 
                 do {
                     let decodeResponse = try decoder.decode(RickAndMortyResponse.self, from: data)
-//                    let decodeResponse = try decoder.decode([CharacterResponse].self, from: data)
                     completion(Result.success(decodeResponse))
                     print(decodeResponse)
 
@@ -69,7 +68,6 @@ struct APIService {
                     completion(Result.failure(APIError.parsing(error as? DecodingError)))
                 }
             }
-
         }
         task.resume()
 

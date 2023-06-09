@@ -23,17 +23,16 @@ class NetworkManager: ObservableObject {
     
     
     init() {
-        getCharactersData()
+        getCharactersData(url: URL(string: getCharactersUrl()))
     }
     
     
-    func getCharactersData() {
+    func getCharactersData(url: URL?) {
     
         isLoading = true
         errorMessage = nil
         
         let service = APIService()
-        let url = URL(string: getCharactersUrl())
         
         service.fetchCharactersData(url: url) { [unowned self] result in
             
@@ -51,5 +50,19 @@ class NetworkManager: ObservableObject {
         }
     }
     
+    //MARK: preview helpers
+    
+    static func errorState() -> NetworkManager {
+        let fetcher = NetworkManager()
+        fetcher.errorMessage = APIError.url(URLError.init(.notConnectedToInternet)).localizedDescription
+        return fetcher
+    }
+    
+    
+    static func successState() -> NetworkManager {
+        let fetcher = NetworkManager()
+        fetcher.characterArray = [CharacterResponse.createDefault()]
+        return fetcher
+    }
     
 }

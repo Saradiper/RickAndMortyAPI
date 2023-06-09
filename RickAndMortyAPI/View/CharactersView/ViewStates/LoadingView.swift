@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct LoadingView: View {
+    
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             Image("MortyFace")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 40)
-            ProgressView()
+                .frame(width: 50)
+            Text(NSLocalizedString("isLoading.true.characters", comment: ""))
+                .padding()
+                
         }
-
     }
 }
 

@@ -11,10 +11,12 @@
 "error.message.badResponse" = "Sorry, the connection to our server failed.";
 "error.message.unknown" = "Sorry, something went wrong.";
 "error.message.badURL" = "Unknown error";
-"error.message.generic" = "Invalid URL";
+"error.message.genericURL" = "Invalid URL";
 "error.message.sesion" = "URL session error";
 "error.message.parsing" = "Parsing error";
 "error.message.statusCode" = "Bad response with status code ";
+
+"error.message.generic" = "¡Cielos, Morty! Parece que hemos tropezado con un fallo técnico";
 
 
 /* VIEW */
@@ -22,3 +24,7 @@
 "view.profile.candidateMail" = "diazper.arq@gmail.com";
 
 "view.about.appInfo" = "";
+
+
+/* OTHER */
+"isLoading.true.characters" = "Nuestros portales espaciales están materializando a los personajes...";

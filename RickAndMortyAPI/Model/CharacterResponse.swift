@@ -9,7 +9,7 @@ import UIKit
 import Combine
 
 
-struct CharacterResponse: Codable, Hashable {
+struct CharacterResponse: Codable, Hashable, Identifiable {
     var id: Int
     var name: String
     var status: String

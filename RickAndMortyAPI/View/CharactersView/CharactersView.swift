@@ -10,7 +10,7 @@ import SwiftUI
 struct CharactersView: View {
 //    @ObservedObject var manager = MultiNetworkManager()
     @StateObject var networkManager = NetworkManager()
-//    @State private var characters: [CharacterResponse] = []
+//    let characters: [CharacterResponse]
 //    var data: RickAndMortyAPI = RickAndMortyAPI()
     
     var body: some View {
@@ -21,7 +21,6 @@ struct CharactersView: View {
         } else {
             CharactersView(networkManager: networkManager)
         }
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
 //            .onAppear {
 //                networkManager.getCharactersData()
 //            }
