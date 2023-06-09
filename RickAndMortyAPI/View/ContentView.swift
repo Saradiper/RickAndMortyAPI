@@ -13,14 +13,15 @@ struct ContentView: View {
         
         NavigationView{
             VStack{
-                NavigationLink("Characters") {
+                NavigationLink {
                     CharactersView()
-//                        .modifier(BoxBackground())
+                } label: {
+                    Text("Characters")
                 }
+                
                 NavigationLink("About"){
                     AboutView()
                 }
-//                .modifier(ButtonBackground())
                 .padding()
             }
         }

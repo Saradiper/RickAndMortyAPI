@@ -9,12 +9,13 @@ import SwiftUI
 
 struct CharacterDetailView: View {
     var character: CharacterResponse
-    let imageSize: CGFloat = 600
+    let imageSize: CGFloat = 150
     
     var body: some View {
             ScrollView {
                 VStack(spacing: 15) {
                     ImageView(character: character)
+                        .frame(width: imageSize, height: imageSize)
                     Text(character.name)
                         .font(.title)
                     VStack(alignment: .leading) {
