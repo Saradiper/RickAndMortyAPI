@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		568670ED2A3362AE008A4517 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670EC2A3362AE008A4517 /* CharacterDetailView.swift */; };
 		568670EF2A33642D008A4517 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670EE2A33642D008A4517 /* Color-Theme.swift */; };
-		568670F12A336F5B008A4517 /* ButtonBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670F02A336F5B008A4517 /* ButtonBackground.swift */; };
+		568670F12A336F5B008A4517 /* BoxBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670F02A336F5B008A4517 /* BoxBackground.swift */; };
 		568670F32A337267008A4517 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670F22A337267008A4517 /* AboutView.swift */; };
 		568670F52A3372D7008A4517 /* AppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670F42A3372D7008A4517 /* AppInfoView.swift */; };
 		568670F72A3372F1008A4517 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670F62A3372F1008A4517 /* ProfileView.swift */; };
+		568670F92A339434008A4517 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670F82A339434008A4517 /* Settings.swift */; };
+		568670FB2A339897008A4517 /* ImageGridModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670FA2A339897008A4517 /* ImageGridModifier.swift */; };
+		568670FD2A339C57008A4517 /* GridModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670FC2A339C57008A4517 /* GridModifier.swift */; };
+		568671012A33A320008A4517 /* CardGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568671002A33A320008A4517 /* CardGradient.swift */; };
+		568671032A33A63E008A4517 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568671022A33A63E008A4517 /* ImageView.swift */; };
 		56D4EEE52A327F7C006F521C /* RickAndMortyAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D4EEE42A327F7C006F521C /* RickAndMortyAPIApp.swift */; };
 		56D4EEE72A327F7C006F521C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D4EEE62A327F7C006F521C /* ContentView.swift */; };
 		56D4EEE92A327F7E006F521C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D4EEE82A327F7E006F521C /* Assets.xcassets */; };
@@ -37,10 +42,15 @@
 /* Begin PBXFileReference section */
 		568670EC2A3362AE008A4517 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		568670EE2A33642D008A4517 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
-		568670F02A336F5B008A4517 /* ButtonBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBackground.swift; sourceTree = "<group>"; };
+		568670F02A336F5B008A4517 /* BoxBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBackground.swift; sourceTree = "<group>"; };
 		568670F22A337267008A4517 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		568670F42A3372D7008A4517 /* AppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoView.swift; sourceTree = "<group>"; };
 		568670F62A3372F1008A4517 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		568670F82A339434008A4517 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		568670FA2A339897008A4517 /* ImageGridModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridModifier.swift; sourceTree = "<group>"; };
+		568670FC2A339C57008A4517 /* GridModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridModifier.swift; sourceTree = "<group>"; };
+		568671002A33A320008A4517 /* CardGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGradient.swift; sourceTree = "<group>"; };
+		568671022A33A63E008A4517 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		56D4EEE12A327F7C006F521C /* RickAndMortyAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D4EEE42A327F7C006F521C /* RickAndMortyAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAPIApp.swift; sourceTree = "<group>"; };
 		56D4EEE62A327F7C006F521C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				56D4EF0A2A3281BE006F521C /* Localizable.strings */,
+				56D4EF022A328139006F521C /* Constants.swift */,
 				56D4EEE42A327F7C006F521C /* RickAndMortyAPIApp.swift */,
 				568670EE2A33642D008A4517 /* Color-Theme.swift */,
 				56D4EEF22A327F93006F521C /* Model */,
@@ -138,10 +149,10 @@
 		56D4EEF42A327FB3006F521C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				56D4EF022A328139006F521C /* Constants.swift */,
 				56D4EF042A328155006F521C /* APIService.swift */,
 				56D4EF062A328177006F521C /* NetworkManager.swift */,
 				56D4EF082A328195006F521C /* APIError.swift */,
+				568670F82A339434008A4517 /* Settings.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -168,10 +179,11 @@
 		56D4EEF92A32806C006F521C /* ViewStates */ = {
 			isa = PBXGroup;
 			children = (
-				56D4EEFA2A328084006F521C /* CharactersListView.swift */,
-				568670EC2A3362AE008A4517 /* CharacterDetailView.swift */,
 				56D4EEFC2A3280A1006F521C /* LoadingView.swift */,
 				56D4EEFE2A3280C3006F521C /* ErrorView.swift */,
+				56D4EEFA2A328084006F521C /* CharactersListView.swift */,
+				568671022A33A63E008A4517 /* ImageView.swift */,
+				568670EC2A3362AE008A4517 /* CharacterDetailView.swift */,
 			);
 			path = ViewStates;
 			sourceTree = "<group>";
@@ -179,9 +191,12 @@
 		56DC0C072A334FF3008BE92A /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
+				568671002A33A320008A4517 /* CardGradient.swift */,
 				56DC0C082A33501A008BE92A /* InformationTextModifier.swift */,
 				56DC0C0A2A3350B2008BE92A /* BackgroundImageModifier.swift */,
-				568670F02A336F5B008A4517 /* ButtonBackground.swift */,
+				568670FA2A339897008A4517 /* ImageGridModifier.swift */,
+				568670F02A336F5B008A4517 /* BoxBackground.swift */,
+				568670FC2A339C57008A4517 /* GridModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -262,9 +277,11 @@
 				56D4EF072A328177006F521C /* NetworkManager.swift in Sources */,
 				56DC0C0B2A3350B2008BE92A /* BackgroundImageModifier.swift in Sources */,
 				568670F32A337267008A4517 /* AboutView.swift in Sources */,
-				568670F12A336F5B008A4517 /* ButtonBackground.swift in Sources */,
+				568670FD2A339C57008A4517 /* GridModifier.swift in Sources */,
+				568670F12A336F5B008A4517 /* BoxBackground.swift in Sources */,
 				56DC0C092A33501A008BE92A /* InformationTextModifier.swift in Sources */,
 				568670ED2A3362AE008A4517 /* CharacterDetailView.swift in Sources */,
+				568670F92A339434008A4517 /* Settings.swift in Sources */,
 				56D4EEFF2A3280C3006F521C /* ErrorView.swift in Sources */,
 				568670F52A3372D7008A4517 /* AppInfoView.swift in Sources */,
 				568670EF2A33642D008A4517 /* Color-Theme.swift in Sources */,
@@ -274,9 +291,12 @@
 				56D4EEFD2A3280A1006F521C /* LoadingView.swift in Sources */,
 				56D4EEF82A328044006F521C /* CharactersView.swift in Sources */,
 				56D4EF0D2A329B6A006F521C /* InfoResponse.swift in Sources */,
+				568670FB2A339897008A4517 /* ImageGridModifier.swift in Sources */,
 				56D4EF052A328155006F521C /* APIService.swift in Sources */,
 				56D4EF032A328139006F521C /* Constants.swift in Sources */,
 				56D4EF092A328195006F521C /* APIError.swift in Sources */,
+				568671012A33A320008A4517 /* CardGradient.swift in Sources */,
+				568671032A33A63E008A4517 /* ImageView.swift in Sources */,
 				568670F72A3372F1008A4517 /* ProfileView.swift in Sources */,
 				56D4EF0F2A329BA4006F521C /* CharacterResponse.swift in Sources */,
 			);

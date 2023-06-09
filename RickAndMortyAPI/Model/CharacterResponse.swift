@@ -18,11 +18,10 @@ struct CharacterResponse: Codable, Hashable, Identifiable {
     var gender: String
     var origin: Location?
     var location: Location?
-    var image: String?
+    var image: String
     var episode: [String] //url
     var url: String
     var created: String
-    var defalutImage = "https://rickandmortyapi.com/api/character/avatar/19.jpeg"
     
     
     init() {

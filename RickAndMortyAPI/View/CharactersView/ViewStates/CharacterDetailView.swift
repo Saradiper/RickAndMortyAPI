@@ -9,9 +9,28 @@ import SwiftUI
 
 struct CharacterDetailView: View {
     var character: CharacterResponse
+    let imageSize: CGFloat = 600
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            ScrollView {
+                VStack(spacing: 15) {
+                    ImageView(character: character)
+                    Text(character.name)
+                        .font(.title)
+                    VStack(alignment: .leading) {
+                        Text("Species: \(character.species)")
+                        if character.type != "" {
+                            Text("Type: \(character.type)")
+                        }
+                        Text("Gender: \(character.gender)")
+                        Text("Location: \(character.location?.name ?? "Unknown")")
+                    }
+                  
+                
+            }
+                .padding()
+                .overlay(CardGradient())
+        }
     }
 }
 

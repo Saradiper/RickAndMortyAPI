@@ -12,51 +12,35 @@ struct CharactersListView: View {
     let imageSize: CGFloat = 100
     
     let colums = [
-        GridItem(.adaptive(minimum: 150))
+        GridItem(.adaptive(minimum: 120))
     ]
+    
+    
     
     var body: some View {
             ScrollView {
-                LazyVGrid(columns: colums)  {
+                LazyVGrid(columns: colums, spacing: 30)  {
                     ForEach(characters) { character in
                         NavigationLink {
                             CharacterDetailView(character: character)
                         } label: {
-                            VStack {
-//                                if character.image != "" {
-                                    AsyncImage(url: URL(string: character.image!)) { phase in
-                                        if let image = phase.image {
-                                            image.resizable()
-                                                .scaledToFit()
-                                                .padding()
-//                                        }
-                                        } else if phase.error != nil {
-                                            AsyncImage(url: URL(string: character.defalutImage)) { phase in
-                                                if let image = phase.image {
-                                                    image.resizable()
-                                                        .scaledToFit()
-                                                        .padding()
-                                                }
-                                            }
-                                        } else {
-                                            ProgressView()
-                                                .frame(width: imageSize, height: imageSize)
-                                     }
-                                }
+                            VStack(spacing: 20) {
+                                ImageView(character: character)
+                                    .frame(width: imageSize, height: imageSize)
                                 
                                 Text(character.name)
                                     .font(.headline)
                                     .foregroundColor(.white)
                             }
-                            .padding(.vertical)
-                            .frame(maxWidth: .infinity)
-                            .background(.lightBackground)
+                            .modifier(GridModifier())
+                            .overlay(CardGradient())
                         }
                 }
             }
         }
     }
 }
+
 
 
 struct CharactersListView_Previews: PreviewProvider {

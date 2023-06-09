@@ -14,7 +14,7 @@ class NetworkManager: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var errorMessage: String? = nil
     
-     let characterUrl = "/character"
+     let characterUrl = "/character/"
     
      func getCharactersUrl() -> String {
         return Constants.baseURL + characterUrl
