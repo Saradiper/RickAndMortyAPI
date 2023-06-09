@@ -105,8 +105,8 @@
 			children = (
 				56D4EF0A2A3281BE006F521C /* Localizable.strings */,
 				56D4EF022A328139006F521C /* Constants.swift */,
-				56D4EEE42A327F7C006F521C /* RickAndMortyAPIApp.swift */,
 				568670EE2A33642D008A4517 /* Color-Theme.swift */,
+				56D4EEE42A327F7C006F521C /* RickAndMortyAPIApp.swift */,
 				56D4EEF22A327F93006F521C /* Model */,
 				56D4EEF32A327F9A006F521C /* View */,
 				56D4EEF42A327FB3006F521C /* ViewModel */,

@@ -7,14 +7,14 @@
 
 
 /* ERROR */
-"error.message.generic" = "¡Cielos, Morty! Parece que hemos tropezado con un fallo técnico";
-"error.message.badResponse" = "¡Oh, jeez! Parece que hemos tenido un error de conexión con nuestro servidor interdimensional";
-"error.message.unknown" = "¡Alerta de anomalía! Algo inesperado ha ocurrido en el tejido espacio-temporal";
-"error.message.badURL" = "¡Wubba lubba dub dub! Hemos encontrado una URL rebelde que no quiere cooperar. Estamos enfrascados en una batalla épica para dominarla y traerla de vuelta al camino correcto";
-"error.message.genericURL" = "¡Oh, cielos! Parece que hemos tropezado con una URL interdimensional defectuosa";
-"error.message.sesion" = "¡Ups! Parece que hemos encontrado un obstáculo en la sesión de URL";
-"error.message.parsing" = "Parece que hemos encontrado un problema de parsing";
-"error.message.statusCode" = "¡Maldición! Hemos obtenido una respuesta no deseada con un código de estado inesperado ";
+"error.message.generic" = "Oops! It seems like we have encountered a technical glitch";
+"error.message.badResponse" = "Oh, jeez! It seems like we have had a connection error with our interdimensional server";
+"error.message.unknown" = "Anomaly alert! Something unexpected has occurred in the space-time fabric";
+"error.message.badURL" = "Wubba lubba dub dub! We have encountered a rebellious URL that refuses to cooperate. We are engaged in an epic battle to conquer it and bring it back on the right path";
+"error.message.genericURL" = "Oh, dear! It seems like we have stumbled upon a defective interdimensional URL";
+"error.message.sesion" = "Oops! It appears that we have encountered a hurdle in the URL session";
+"error.message.parsing" = "It seems like we have encountered a parsing problem";
+"error.message.statusCode" = "Curse it! We have received an unwanted response with an unexpected status code ";
 
 
 
@@ -23,12 +23,12 @@
 "view.profile.name" = "Sara Díaz Pérez";
 "view.profile.role" = "iOS Developer";
 
-"view.profile.infoHeader" = "Datos de contacto";
+"view.profile.infoHeader" = "Contact Information";
 "view.profile.candidatePhone" = "(+34) 670 894 500";
 "view.profile.candidateMail" = "diazper.arq@gmail.com";
 
-"view.about.appInfo" = "En este sitio encontrarás información sobre tu científico favorito y su desafortunado nieto, junto con otros personajes destacados de la serie. Este proyecto fue desarrollado utilizando el framework SwiftUI.";
+"view.about.appInfo" = "On this site, you will find information about your favorite scientist and his unfortunate grandson, along with other prominent characters from the series. This project was developed using the SwiftUI framework";
 
 
 /* OTHER */
-"isLoading.true.characters" = "Nuestros portales espaciales están materializando a los personajes...";
+"isLoading.true.characters" = "Our space portals are materializing the characters...";
