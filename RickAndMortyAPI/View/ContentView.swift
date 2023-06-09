@@ -15,10 +15,12 @@ struct ContentView: View {
             VStack{
                 NavigationLink("Characters") {
                     CharactersView()
+                        .modifier(ButtonBackground())
                 }
                 NavigationLink("About"){
-//                    AboutView()
+                    AboutView()
                 }
+//                .modifier(ButtonBackground())
                 .padding()
             }
         }

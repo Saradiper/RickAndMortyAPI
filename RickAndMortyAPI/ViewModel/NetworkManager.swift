@@ -9,7 +9,6 @@ import Foundation
 
 
 class NetworkManager: ObservableObject {
-    //characterArray: For the CharactersListView_Previews
     @Published var characterArray = [CharacterResponse]()
     @Published var decodeResponse: RickAndMortyResponse? = nil
     @Published var isLoading: Bool = false

@@ -16,7 +16,7 @@ struct CharactersView: View {
         } else if networkManager.errorMessage != nil {
             ErrorView(networkManager: networkManager)
         } else {
-            CharactersView(networkManager: networkManager)
+            CharactersListView(characters: networkManager.decodeResponse?.results ?? [])
         }
     }
         

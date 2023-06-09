@@ -8,12 +8,51 @@
 import SwiftUI
 
 struct CharactersListView: View {
-    let characters: [CharacterResponse]
+    var characters: [CharacterResponse]
+    let imageSize: CGFloat = 100
+    
+    let colums = [
+        GridItem(.adaptive(minimum: 150))
+    ]
     
     var body: some View {
-        List {
-            ForEach(characters) { character in
-                /*@START_MENU_TOKEN@*/Text(character.name)/*@END_MENU_TOKEN@*/
+            ScrollView {
+                LazyVGrid(columns: colums)  {
+                    ForEach(characters) { character in
+                        NavigationLink {
+                            CharacterDetailView(character: character)
+                        } label: {
+                            VStack {
+//                                if character.image != "" {
+                                    AsyncImage(url: URL(string: character.image!)) { phase in
+                                        if let image = phase.image {
+                                            image.resizable()
+                                                .scaledToFit()
+                                                .padding()
+//                                        }
+                                        } else if phase.error != nil {
+                                            AsyncImage(url: URL(string: character.defalutImage)) { phase in
+                                                if let image = phase.image {
+                                                    image.resizable()
+                                                        .scaledToFit()
+                                                        .padding()
+                                                }
+                                            }
+                                        } else {
+                                            ProgressView()
+                                                .frame(width: imageSize, height: imageSize)
+                                     }
+                                }
+                                
+                                Text(character.name)
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                            }
+                            .padding(.vertical)
+                            .frame(maxWidth: .infinity)
+                            .background(.lightBackground)
+                        }
+                }
             }
         }
     }

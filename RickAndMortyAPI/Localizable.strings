@@ -20,10 +20,14 @@
 
 
 /* VIEW */
+"view.profile.name" = "Sara Díaz Pérez";
+"view.profile.role" = "iOS Developer";
+
+"view.profile.infoHeader" = "Datos de contacto";
 "view.profile.candidatePhone" = "(+34) 670 894 500";
 "view.profile.candidateMail" = "diazper.arq@gmail.com";
 
-"view.about.appInfo" = "";
+"view.about.appInfo" = "En este sitio encontrarás información sobre tu científico favorito y su desafortunado nieto, junto con otros personajes destacados de la serie. Este proyecto fue desarrollado utilizando el framework SwiftUI.";
 
 
 /* OTHER */

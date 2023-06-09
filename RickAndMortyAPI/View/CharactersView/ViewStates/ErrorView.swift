@@ -24,7 +24,8 @@ struct ErrorView: View {
                 Button {
                     networkManager.getCharactersData(url: URL(string:networkManager.getCharactersUrl()))
                 } label: {
-                    Text("Intalo de nuevo")
+                    Text("Intentalo de nuevo")
+                        .modifier(ButtonBackground())
                 }
             }
         .background(
