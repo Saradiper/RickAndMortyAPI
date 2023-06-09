@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct AboutView: View {
-    @State var pickerView = ["App info", "Profile"]
-    @State var pickerViewSelected = "App info"
+    @State var pickerView = ["App information", "Profile"]
+    @State var pickerViewSelected = "App information"
+    
+    init() {
+        UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(.darkBlueBackground)
+        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
+        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(.darkBlueBackground)], for: .normal)
+    }
+    
     
     var body: some View {
                 ScrollView {
@@ -33,25 +40,20 @@ struct AboutView: View {
                             }
                         }
                         .pickerStyle(.segmented)
-                        .background(.white.opacity(0.4))
+                        .background(.white.opacity(0.6))
                         .cornerRadius(6)
-                        
                     }
                     
                     VStack() {
                         VStack() {
-                            
-                            if pickerViewSelected == "App info" {
+                            if pickerViewSelected == "App information" {
                                 AppInfoView()
-                                
                             } else {
                                 ProfileView()
-                    
                             }
                             
                             Spacer()
                         }
-                        
                     }
 
         }

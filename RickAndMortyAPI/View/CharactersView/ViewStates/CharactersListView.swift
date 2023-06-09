@@ -16,7 +16,6 @@ struct CharactersListView: View {
     ]
     
     
-    
     var body: some View {
             ScrollView {
                 LazyVGrid(columns: colums, spacing: 30)  {

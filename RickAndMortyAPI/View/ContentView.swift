@@ -12,13 +12,13 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
-                VStack(spacing: 60) {
+                VStack(spacing: 55) {
                         Image("imgC1")
                             .resizable()
-                            .scaledToFit()
+                            .scaledToFill()
                             .frame(maxWidth: geometry.size.width)
                     
-                    VStack(spacing: 15) {
+                    VStack(spacing: 10) {
                         NavigationLink {
                             CharactersView()
                         } label: {
@@ -39,7 +39,7 @@ struct ContentView: View {
                     Image("Rick-and-Morty")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 260)
+                        .frame(width: 280)
                         .padding()
                     
                 }

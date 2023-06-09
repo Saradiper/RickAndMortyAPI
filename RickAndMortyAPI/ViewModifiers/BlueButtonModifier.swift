@@ -10,7 +10,7 @@ import SwiftUI
 struct BlueButtonModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .frame(width: 280)
+            .frame(width: 270)
             .padding()
             .background(.darkBlueBackground)
             .clipShape(RoundedRectangle(cornerRadius: 10))

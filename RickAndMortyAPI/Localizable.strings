@@ -23,9 +23,9 @@
 "view.profile.name" = "Sara Díaz Pérez";
 "view.profile.role" = "iOS Developer";
 
-"view.profile.infoHeader" = "Contact Information";
+"view.profile.infoHeader" = "Contact information";
 "view.profile.candidatePhone" = "(+34) 670 894 500";
-"view.profile.candidateMail" = "diazper.arq@gmail.com";
+"view.profile.candidateMail" = "sdiazper.arq@gmail.com";
 
 "view.about.appInfo" = "On this site, you will find information about your favorite scientist and his unfortunate grandson, along with other prominent characters from the series. This project was developed using the SwiftUI framework";
 

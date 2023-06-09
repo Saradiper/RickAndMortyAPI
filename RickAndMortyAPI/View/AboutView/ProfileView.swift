@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        VStack(spacing: 5) {
+        VStack(spacing: 10) {
             Text(NSLocalizedString("view.profile.infoHeader", comment: ""))
                 .font(.callout.bold())
             
