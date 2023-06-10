@@ -18,10 +18,12 @@ enum APIError: Error, CustomStringConvertible {
     var localizedDescription: String {
         //User feedback
         switch self {
-        case .badURL, .parsing, .unknown:
+        case .unknown:
+            return NSLocalizedString("error.message.badResponse", comment: "")
+        case .badURL, .parsing:
             return NSLocalizedString("error.message.generic", comment: "")
         case .badResponse(_):
-            return NSLocalizedString("error.message.badResponse", comment: "")
+            return NSLocalizedString("error.message.statusCode", comment: "")
         case .url(let error):
             return error?.localizedDescription ?? NSLocalizedString("error.message.generic", comment: "")
         }

@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct APIService {
+struct APIService: APIServiceProtocol {
     
     func fetch<T: Decodable>(_ type: T.Type, url: URL?, completion: @escaping(Result<T, APIError>) -> Void) {
 
@@ -42,7 +42,7 @@ struct APIService {
     
     
     func fetchCharactersData(url: URL?, completion: @escaping(Result<RickAndMortyResponse, APIError>) -> Void) {
-//    func getCharactersData(url: URL?, completion: @escaping(Result<[CharacterResponse], APIError>) -> Void) {
+
 
         guard let url = url else {
             let error = APIError.badURL

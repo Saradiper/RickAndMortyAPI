@@ -14,6 +14,8 @@ class NetworkManager: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var errorMessage: String? = nil
     
+    let service: APIServiceProtocol
+    
      let characterUrl = "/character/"
     
      func getCharactersUrl() -> String {
@@ -21,7 +23,8 @@ class NetworkManager: ObservableObject {
     }
     
     
-    init() {
+    init(service: APIServiceProtocol = APIService()) {
+        self.service = service
         getCharactersData(url: URL(string: getCharactersUrl()))
     }
     
@@ -31,8 +34,7 @@ class NetworkManager: ObservableObject {
     
         isLoading = true
         errorMessage = nil
-        
-        let service = APIService()
+    
         
         service.fetchCharactersData(url: url) { [unowned self] result in
             

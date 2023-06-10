@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5631C41F2A346A5100AC0E5C /* APIMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631C41E2A346A5100AC0E5C /* APIMockService.swift */; };
+		5631C4212A346A9800AC0E5C /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631C4202A346A9800AC0E5C /* APIServiceProtocol.swift */; };
 		56673C4F2A33CE2100CB232F /* BlueButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56673C4E2A33CE2100CB232F /* BlueButtonModifier.swift */; };
 		568670ED2A3362AE008A4517 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670EC2A3362AE008A4517 /* CharacterDetailView.swift */; };
 		568670EF2A33642D008A4517 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670EE2A33642D008A4517 /* Color-Theme.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5631C41E2A346A5100AC0E5C /* APIMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMockService.swift; sourceTree = "<group>"; };
+		5631C4202A346A9800AC0E5C /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		56673C4E2A33CE2100CB232F /* BlueButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButtonModifier.swift; sourceTree = "<group>"; };
 		568670EC2A3362AE008A4517 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		568670EE2A33642D008A4517 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
@@ -151,10 +155,12 @@
 		56D4EEF42A327FB3006F521C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5631C4202A346A9800AC0E5C /* APIServiceProtocol.swift */,
 				56D4EF042A328155006F521C /* APIService.swift */,
 				56D4EF062A328177006F521C /* NetworkManager.swift */,
 				56D4EF082A328195006F521C /* APIError.swift */,
 				568670F82A339434008A4517 /* Settings.swift */,
+				5631C41E2A346A5100AC0E5C /* APIMockService.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 				56D4EF072A328177006F521C /* NetworkManager.swift in Sources */,
 				56DC0C0B2A3350B2008BE92A /* BackgroundImageModifier.swift in Sources */,
 				568670F32A337267008A4517 /* AboutView.swift in Sources */,
+				5631C41F2A346A5100AC0E5C /* APIMockService.swift in Sources */,
 				568670FD2A339C57008A4517 /* GridModifier.swift in Sources */,
 				568670F12A336F5B008A4517 /* BoxBackground.swift in Sources */,
 				56DC0C092A33501A008BE92A /* InformationTextModifier.swift in Sources */,
@@ -292,6 +299,7 @@
 				56D4EEE52A327F7C006F521C /* RickAndMortyAPIApp.swift in Sources */,
 				56D4EEFB2A328084006F521C /* CharactersListView.swift in Sources */,
 				56D4EF112A329BD0006F521C /* Location.swift in Sources */,
+				5631C4212A346A9800AC0E5C /* APIServiceProtocol.swift in Sources */,
 				56D4EEFD2A3280A1006F521C /* LoadingView.swift in Sources */,
 				56D4EEF82A328044006F521C /* CharactersView.swift in Sources */,
 				56D4EF0D2A329B6A006F521C /* InfoResponse.swift in Sources */,
