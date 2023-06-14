@@ -23,7 +23,7 @@ struct ErrorView: View {
                     .modifier(InformationTextModifier())
                     
                 Button {
-                    networkManager.getCharactersData(url: URL(string:networkManager.getCharactersUrl()))
+                    networkManager.getCharactersData(url: URL(string: networkManager.getCharactersUrl(urlProvider: URLProvider())))
                 } label: {
                     Text(NSLocalizedString("button.tryAgain", comment: ""))
                         .font(Font.body.bold())

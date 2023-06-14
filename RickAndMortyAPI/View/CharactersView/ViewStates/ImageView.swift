@@ -18,7 +18,7 @@ struct ImageView: View {
                     .modifier(ImageGridModifier())
 
             } else if phase.error != nil {
-                AsyncImage(url: URL(string: Settings.defalutImage)) { phase in
+                AsyncImage(url: URL(string: Constants.defalutImage)) { phase in
                     if let image = phase.image {
                         image
                             .resizable()

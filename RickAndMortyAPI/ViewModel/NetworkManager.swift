@@ -18,14 +18,14 @@ class NetworkManager: ObservableObject {
     
      let characterUrl = "/character/"
     
-     func getCharactersUrl() -> String {
-        return Constants.baseURL + characterUrl
+    func getCharactersUrl(urlProvider: URLProviderProtocol) -> String {
+        return urlProvider.getBaseURL() + characterUrl
     }
     
     
-    init(service: APIServiceProtocol = APIService()) {
+    init(service: APIServiceProtocol = APIService(), urlProvider: URLProviderProtocol = URLProvider()) {
         self.service = service
-        getCharactersData(url: URL(string: getCharactersUrl()))
+        getCharactersData(url: URL(string: getCharactersUrl(urlProvider: urlProvider)))
     }
     
     
