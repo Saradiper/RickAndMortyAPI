@@ -8,6 +8,7 @@
 import Foundation
 
 
+//TODO: For testing
 struct APIMockService: APIServiceProtocol {
     var result: Result<RickAndMortyResponse, APIError>
     

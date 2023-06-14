@@ -8,9 +8,8 @@
 import Foundation
 
 
-final class GameSettings: ObservableObject {
+final class Settings: ObservableObject {
     static let defalutImage = "https://rickandmortyapi.com/api/character/avatar/19.jpeg"
-    
     
 }
 

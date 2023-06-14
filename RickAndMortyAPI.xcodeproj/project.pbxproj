@@ -109,10 +109,8 @@
 		56D4EEE32A327F7C006F521C /* RickAndMortyAPI */ = {
 			isa = PBXGroup;
 			children = (
-				56D4EF0A2A3281BE006F521C /* Localizable.strings */,
-				56D4EF022A328139006F521C /* Constants.swift */,
-				568670EE2A33642D008A4517 /* Color-Theme.swift */,
 				56D4EEE42A327F7C006F521C /* RickAndMortyAPIApp.swift */,
+				56F857CC2A3A263F00B57506 /* Confi */,
 				56D4EEF22A327F93006F521C /* Model */,
 				56D4EEF32A327F9A006F521C /* View */,
 				56D4EEF42A327FB3006F521C /* ViewModel */,
@@ -155,11 +153,10 @@
 		56D4EEF42A327FB3006F521C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5631C4202A346A9800AC0E5C /* APIServiceProtocol.swift */,
 				56D4EF042A328155006F521C /* APIService.swift */,
 				56D4EF062A328177006F521C /* NetworkManager.swift */,
 				56D4EF082A328195006F521C /* APIError.swift */,
-				568670F82A339434008A4517 /* Settings.swift */,
+				5631C4202A346A9800AC0E5C /* APIServiceProtocol.swift */,
 				5631C41E2A346A5100AC0E5C /* APIMockService.swift */,
 			);
 			path = ViewModel;
@@ -208,6 +205,17 @@
 				568670FC2A339C57008A4517 /* GridModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		56F857CC2A3A263F00B57506 /* Confi */ = {
+			isa = PBXGroup;
+			children = (
+				56D4EF0A2A3281BE006F521C /* Localizable.strings */,
+				56D4EF022A328139006F521C /* Constants.swift */,
+				568670EE2A33642D008A4517 /* Color-Theme.swift */,
+				568670F82A339434008A4517 /* Settings.swift */,
+			);
+			path = Confi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
