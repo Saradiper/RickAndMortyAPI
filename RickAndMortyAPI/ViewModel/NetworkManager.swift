@@ -16,7 +16,7 @@ class NetworkManager: ObservableObject {
     
     let service: APIServiceProtocol
     
-     let characterUrl = "/character/"
+    let characterUrl = "/character/"
     
     func getCharactersUrl(urlProvider: URLProviderProtocol) -> String {
         return urlProvider.getBaseURL() + characterUrl
@@ -29,13 +29,12 @@ class NetworkManager: ObservableObject {
     }
     
     
-    //MARK: Pass URL to implement recursion to load characters from other pages
+   
     func getCharactersData(url: URL?) {
     
         isLoading = true
         errorMessage = nil
     
-        
         service.fetchCharactersData(url: url) { [unowned self] result in
             
             DispatchQueue.main.async {
@@ -45,7 +44,20 @@ class NetworkManager: ObservableObject {
                     self.errorMessage = error.localizedDescription
                     print(error)
                 case .success(let decodedResponse):
-                    self.decodeResponse = decodedResponse
+                    if let nextCharacterPage = decodedResponse.info?.next {
+                        let nextURL = URL(string: nextCharacterPage)
+                        
+                        //Recursively fetch characters data from next page
+                        self.getCharactersData(url: nextURL)
+                    }
+                    
+                    if let results = decodedResponse.results {
+                        if  self.decodeResponse == nil {
+                            self.decodeResponse = decodedResponse
+                        } else {
+                            self.decodeResponse?.results?.append(contentsOf: results)
+                        }
+                    }
                 }
             }
         }
