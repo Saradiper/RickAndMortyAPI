@@ -9,6 +9,6 @@ import Foundation
 
 
 protocol APIServiceProtocol {
-    func fetchCharactersData(url: URL?, completion: @escaping(Result<RickAndMortyResponse, APIError>) -> Void)
+    func fetch<T: Decodable>(_ type: T.Type, url: URL?, completion: @escaping(Result<T, APIError>) -> Void) 
     
 }

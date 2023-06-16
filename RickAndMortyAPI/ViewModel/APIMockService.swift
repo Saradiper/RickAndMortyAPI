@@ -12,7 +12,12 @@ import Foundation
 struct APIMockService: APIServiceProtocol {
     var result: Result<RickAndMortyResponse, APIError>
     
-    func fetchCharactersData(url: URL?, completion: @escaping (Result<RickAndMortyResponse, APIError>) -> Void) {
+    func fetch<T: Decodable>(_ type: T.Type, url: URL?, completion: @escaping(Result<T, APIError>) -> Void) {
+        guard let result = result as? Result<T, APIError> else {
+            let error = APIError.badURL
+            completion(Result.failure(error))
+            return
+        }
         completion(result)
     }
     

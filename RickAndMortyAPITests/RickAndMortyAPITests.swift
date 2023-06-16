@@ -42,23 +42,23 @@ final class RickAndMortyAPITests: XCTestCase {
 
     func test_loading_error() {
         let result = Result<RickAndMortyResponse, APIError>.failure(APIError.badURL)
-        
+
         let fetcher = NetworkManager(service: APIMockService(result: result))
-        
+
         let promise = expectation(description: "show error message")
         fetcher.$characterArray.sink { characters in
             if !characters.isEmpty {
                 XCTFail()
             }
-            
+
         }.store(in: &subscriptions)
-        
+
         fetcher.$errorMessage.sink { message in
             if message != nil {
                 promise.fulfill()
             }
         }.store(in: &subscriptions)
-    
+
         wait(for: [promise], timeout: 2)
     }
     

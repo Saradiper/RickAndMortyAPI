@@ -35,7 +35,7 @@ class NetworkManager: ObservableObject {
         isLoading = true
         errorMessage = nil
     
-        service.fetchCharactersData(url: url) { [unowned self] result in
+        service.fetch(RickAndMortyResponse.self, url: url) { [unowned self] result in
             
             DispatchQueue.main.async {
                 self.isLoading = false
