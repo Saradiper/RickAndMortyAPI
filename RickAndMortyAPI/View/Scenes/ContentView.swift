@@ -22,14 +22,14 @@ struct ContentView: View {
                         NavigationLink {
                             CharactersView()
                         } label: {
-                            Text(NSLocalizedString("button.mainView.characters", comment: ""))
+                            Text("button.mainView.characters".localized)
                                 .modifier(BlueButtonModifier())
                         }
                         
                         NavigationLink {
                             AboutView()
                         } label: {
-                            Text(NSLocalizedString("button.mainView.about", comment: ""))
+                            Text("button.mainView.about".localized)
                                 .modifier(BlueButtonModifier())
                         }
                         .padding()

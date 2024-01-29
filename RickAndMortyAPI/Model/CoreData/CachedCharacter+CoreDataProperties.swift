@@ -14,7 +14,7 @@ import UIKit
 extension CachedCharacter {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<CachedCharacter> {
-        return NSFetchRequest<CachedCharacter>(entityName: "CachedCharacter")
+        return NSFetchRequest<CachedCharacter>(entityName: "entityCharacter".localized)
     }
 
     @NSManaged public var name: String?
@@ -31,27 +31,27 @@ extension CachedCharacter {
     @NSManaged public var cachedOrigin: CachedPlanet?
 
     public var wrappedName: String {
-        name ?? "Unknown name"
+        name ?? "wrappedName".localized
     }
     
     public var wrappedStatus: String {
-        status ?? "Unknown status"
+        status ?? "wrappedStatus".localized
     }
     
     public var wrappedSpecies: String {
-        species ?? "Unknown species"
+        species ?? "wrappedSpecies".localized
     }
     
     public var wrappedType: String {
-        type ?? "Unknown type"
+        type ?? "wrappedType".localized
     }
     
     public var wrappedGender: String {
-        gender ?? "Unknown gender"
+        gender ?? "wrappedGender".localized
     }
     
     public var wrappedImage: String {
-        image ?? "Unknown gender"
+        image ?? "wrappedImage".localized
     }
     
     public var wrappedCachedLocation: CachedPlanet {
@@ -63,11 +63,11 @@ extension CachedCharacter {
     }
     
     public var wrappedUrl: String {
-        url ?? "Unknown url"
+        url ?? "wrappedUrl".localized
     }
     
     public var wrappedCreated: String {
-        created ?? "Unknown created"
+        created ?? "wrappedCreated".localized
     }
     
 }

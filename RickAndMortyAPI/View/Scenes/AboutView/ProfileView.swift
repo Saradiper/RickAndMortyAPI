@@ -10,12 +10,12 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
         VStack(spacing: 10) {
-            Text(NSLocalizedString("view.profile.infoHeader", comment: ""))
+            Text("view.profile.infoHeader".localized)
                 .font(.callout.bold())
             
             VStack(spacing: 5) {
-                Text(NSLocalizedString("view.profile.candidatePhone", comment: ""))
-                Text(NSLocalizedString("view.profile.candidateMail", comment: ""))
+                Text("view.profile.candidatePhone".localized)
+                Text("view.profile.candidateMail".localized)
             }
                 .font(.caption)
         }

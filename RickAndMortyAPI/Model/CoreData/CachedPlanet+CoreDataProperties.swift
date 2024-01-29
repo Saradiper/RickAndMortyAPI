@@ -13,7 +13,7 @@ import CoreData
 extension CachedPlanet {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<CachedPlanet> {
-        return NSFetchRequest<CachedPlanet>(entityName: "CachedPlanet")
+        return NSFetchRequest<CachedPlanet>(entityName: "entityPlanet".localized)
     }
 
     @NSManaged public var name: String?
@@ -22,11 +22,11 @@ extension CachedPlanet {
     @NSManaged public var location: CachedCharacter?
     
     public var wrappedName: String {
-        name ?? "Unknown name"
+        name ?? "wrappedName".localized
     }
 
     public var wrappedUrl: String {
-        url ?? "Unknown url"
+        url ?? "wrappedUrl".localized
     }
 
 }

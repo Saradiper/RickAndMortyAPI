@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct AboutView: View {
-    @State var pickerView = ["App information", "Profile"]
-    @State var pickerViewSelected = "App information"
+    @State var pickerView = ["App.Information".localized , "Profile".localized]
+    @State var pickerViewSelected = "App.Information".localized
     
     init() {
         UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(.darkBlueBackground)
@@ -28,9 +28,9 @@ struct AboutView: View {
                                 .frame(width: 140)
                                 .clipShape(Circle())
                             
-                            Text(NSLocalizedString("view.profile.name", comment: ""))
+                            Text("view.profile.name".localized)
                                 .font(.title)
-                            Text(NSLocalizedString("view.profile.role", comment: ""))
+                            Text("view.profile.role".localized)
                             
                         }
                         
@@ -46,7 +46,7 @@ struct AboutView: View {
                     
                     VStack() {
                         VStack() {
-                            if pickerViewSelected == "App information" {
+                            if pickerViewSelected == "App.Information".localized {
                                 AppInfoView()
                             } else {
                                 ProfileView()

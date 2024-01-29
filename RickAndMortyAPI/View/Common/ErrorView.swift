@@ -18,14 +18,14 @@ struct ErrorView: View {
                     .scaledToFit()
                     .frame(width: 100, height: 140)
                 
-                Text(networkManager.errorMessage ?? NSLocalizedString("error.message.generic", comment: ""))
+                Text(networkManager.errorMessage ?? "error.message.generic".localized)
                     .foregroundColor(.black)
                     .modifier(InformationTextModifier())
                     
                 Button {
                     networkManager.getCharactersData(url: URL(string: networkManager.getCharactersUrl(urlProvider: URLProvider())))
                 } label: {
-                    Text(NSLocalizedString("button.tryAgain", comment: ""))
+                    Text("button.tryAgain".localized)
                         .font(Font.body.bold())
                         .foregroundColor(.white)
                         .modifier(BoxBackground())

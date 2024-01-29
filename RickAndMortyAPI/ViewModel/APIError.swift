@@ -19,13 +19,13 @@ enum APIError: Error, CustomStringConvertible {
         //User feedback
         switch self {
         case .unknown:
-            return NSLocalizedString("error.message.badResponse", comment: "")
+            return "error.message.badResponse".localized
         case .badURL, .parsing:
-            return NSLocalizedString("error.message.generic", comment: "")
+            return "error.message.generic".localized
         case .badResponse(_):
-            return NSLocalizedString("error.message.statusCode", comment: "")
+            return "error.message.statusCode".localized
         case .url(let error):
-            return error?.localizedDescription ?? NSLocalizedString("error.message.generic", comment: "")
+            return error?.localizedDescription ?? "error.message.generic".localized
         }
     }
     
@@ -33,15 +33,15 @@ enum APIError: Error, CustomStringConvertible {
         //Info for debugging
         switch self {
         case .unknown:
-            return NSLocalizedString("error.message.badResponse", comment: "")
+            return "error.message.badResponse".localized
         case .badURL:
-            return NSLocalizedString("error.message.badURL", comment: "")
+            return "error.message.badURL".localized
         case .url(let error):
-            return error?.localizedDescription ?? NSLocalizedString("error.message.sesion", comment: "")
+            return error?.localizedDescription ?? "error.message.sesion".localized
         case .parsing(let error):
-            return NSLocalizedString("error.message.parsing", comment: "") + (error?.localizedDescription ?? "")
+            return "error.message.parsing".localized + (error?.localizedDescription ?? "")
         case .badResponse(statusCode: let statusCode):
-            return NSLocalizedString("error.message.statusCode", comment: "") + "\(statusCode)"
+            return "error.message.statusCode".localized + "\(statusCode)"
         }
     }
     

@@ -17,7 +17,7 @@ struct LoadingView: View {
                 .scaledToFit()
                 .frame(width: 80)
             
-            Text(NSLocalizedString("isLoading.true.characters", comment: ""))
+            Text("isLoading.true.characters".localized)
                 .modifier(InformationTextModifier())
         
         }

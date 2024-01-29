@@ -17,7 +17,7 @@ struct CharacterFavoriteListView: View {
     
     var body: some View {
         if characters.count == 0 {
-            Text("You haven't added any favorites yet")
+            Text("nilCharacters".localized)
         } else {
         ScrollView {
                 LazyVGrid(columns: colums, spacing: 30)  {

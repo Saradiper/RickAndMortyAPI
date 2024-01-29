@@ -67,7 +67,7 @@ struct CharactersListView: View {
                         do {
                             if moc.hasChanges {
                                 try moc.save()
-                                print("success saved cached")
+                                print("successSaved".localized)
                             }
                         }
                         

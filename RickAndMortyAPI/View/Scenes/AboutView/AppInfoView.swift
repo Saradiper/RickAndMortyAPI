@@ -10,7 +10,7 @@ import SwiftUI
 struct AppInfoView: View {
     var body: some View {
         VStack {
-            Text(NSLocalizedString("view.about.appInfo", comment: ""))
+            Text("view.about.appInfo".localized)
                 .modifier(InformationTextModifier())
         }
     }

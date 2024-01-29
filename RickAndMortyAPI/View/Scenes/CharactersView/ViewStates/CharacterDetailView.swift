@@ -23,15 +23,15 @@ struct CharacterDetailView: View {
                     .font(.title)
                
                 VStack(alignment: .leading, spacing: 16) {
-                    Text("Species: \(character.wrappedSpecies)")
+                    Text("\("species".localized): \(character.wrappedSpecies)")
                     
-                    Text("Type: \(character.wrappedType != "" ? character.wrappedType : "Unknown")")
+                    Text("\("type".localized): \(character.wrappedType != "" ? character.wrappedType : "unknown".localized)")
                     
-                    Text("Gender: \(character.wrappedGender)")
+                    Text("\("gender".localized): \(character.wrappedGender)")
 
-                    Text("Location: \(character.wrappedName)")
+                    Text("\("location".localized): \(character.wrappedName)")
                     
-                    Toggle("Is a favorite character?", isOn: $character.favorite)
+                    Toggle("favorite.Toggle".localized, isOn: $character.favorite)
                 }
                 .padding()
                 

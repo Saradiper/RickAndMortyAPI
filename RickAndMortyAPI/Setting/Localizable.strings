@@ -6,6 +6,14 @@
 //
 
 
+/* GENERICS */
+"unknown" = "Unknown";
+"species" =  "Species";
+"type" = "Type";
+"gender" = "Gender";
+"location" = "Location";
+
+
 /* ERROR */
 "error.message.generic" = "Oops! It seems like we have encountered a technical glitch";
 "error.message.badResponse" = "Oh, jeez! It seems like we have had a connection error with our interdimensional server";
@@ -19,15 +27,26 @@
 
 
 
-/* VIEW */
+/* PROFILE VIEW */
 "view.profile.name" = "Sara Díaz Pérez";
 "view.profile.role" = "iOS Developer";
+
+"App.Information" = "App information";
+"Profile" = "Profile";
 
 "view.profile.infoHeader" = "Contact information";
 "view.profile.candidatePhone" = "(+34) 670 894 500";
 "view.profile.candidateMail" = "sdiazper.arq@gmail.com";
 
 "view.about.appInfo" = "On this site, you will find information about your favorite scientist and his unfortunate grandson, along with other prominent characters from the series. This project was developed using the SwiftUI framework";
+
+
+/* FAVORITE LIST VIEW */
+"nilCharacters" = "You haven't added any favorites yet" ;
+
+
+/* FAVORITE LIST VIEW */
+"favorite.Toggle" = "Is a favorite character?";
 
 
 /* BUTTON */
@@ -37,6 +56,20 @@
 "button.mainView.about" = "About the app";
 
 
+/* COREDATA */
+"entityCharacter" = "CachedCharacter";
+"entityPlanet" = "CachedPlanet";
+
+"wrappedName" = "Unknown name";
+"wrappedStatus" = "Unknown status";
+"wrappedSpecies" = "Unknown species";
+"wrappedType" = "Unknown type";
+"wrappedGender" = "Unknown gender";
+"wrappedImage" = "Unknown gender";
+"wrappedUrl" = "Unknown url";
+"wrappedCreated" = "Unknown created";
+
 
 /* OTHER */
 "isLoading.true.characters" = "Our space portals are materializing the characters...";
+"successSaved" = "success saved cached";

@@ -18,6 +18,7 @@
 		56797EF02B66B9F0007AD08A /* CachedPlanet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56797EEC2B66B9F0007AD08A /* CachedPlanet+CoreDataProperties.swift */; };
 		56797EFB2B67CC20007AD08A /* CharacterFavoriteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56797EFA2B67CC20007AD08A /* CharacterFavoriteListView.swift */; };
 		56797EFD2B67D938007AD08A /* ListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56797EFC2B67D938007AD08A /* ListCardView.swift */; };
+		56797EFF2B6807FB007AD08A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56797EFE2B6807FA007AD08A /* StringExtension.swift */; };
 		568670ED2A3362AE008A4517 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670EC2A3362AE008A4517 /* CharacterDetailView.swift */; };
 		568670EF2A33642D008A4517 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670EE2A33642D008A4517 /* Color-Theme.swift */; };
 		568670F12A336F5B008A4517 /* BoxBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568670F02A336F5B008A4517 /* BoxBackground.swift */; };
@@ -74,6 +75,7 @@
 		56797EEC2B66B9F0007AD08A /* CachedPlanet+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedPlanet+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		56797EFA2B67CC20007AD08A /* CharacterFavoriteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFavoriteListView.swift; sourceTree = "<group>"; };
 		56797EFC2B67D938007AD08A /* ListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardView.swift; sourceTree = "<group>"; };
+		56797EFE2B6807FA007AD08A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		568670EC2A3362AE008A4517 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		568670EE2A33642D008A4517 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		568670F02A336F5B008A4517 /* BoxBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBackground.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 				56D4EF0A2A3281BE006F521C /* Localizable.strings */,
 				56D4EF022A328139006F521C /* Constants.swift */,
 				568670EE2A33642D008A4517 /* Color-Theme.swift */,
+				56797EFE2B6807FA007AD08A /* StringExtension.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				568670FD2A339C57008A4517 /* GridModifier.swift in Sources */,
 				56797EFB2B67CC20007AD08A /* CharacterFavoriteListView.swift in Sources */,
 				568670F12A336F5B008A4517 /* BoxBackground.swift in Sources */,
+				56797EFF2B6807FB007AD08A /* StringExtension.swift in Sources */,
 				56DC0C092A33501A008BE92A /* InformationTextModifier.swift in Sources */,
 				56797EF02B66B9F0007AD08A /* CachedPlanet+CoreDataProperties.swift in Sources */,
 				56797EFD2B67D938007AD08A /* ListCardView.swift in Sources */,
