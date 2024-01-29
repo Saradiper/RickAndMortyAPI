@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ImageView: View {
-    var character: CharacterResponse
+    var character: CachedCharacter
     
     var body: some View {
-        AsyncImage(url: URL(string: character.image)) { phase in
+        AsyncImage(url: URL(string: character.wrappedImage)) { phase in
             if let image = phase.image {
                 image
                     .resizable()
@@ -33,8 +33,8 @@ struct ImageView: View {
 }
 
 
-struct ImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        ImageView(character: NetworkManager.successState().characterArray[0])
-    }
-}
+//struct ImageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ImageView(character: NetworkManager.successState().characterArray[0])
+//    }
+//}

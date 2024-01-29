@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct Constants {
     static let baseURL = "https://rickandmortyapi.com/api"
     static let defalutImage = "https://rickandmortyapi.com/api/character/avatar/19.jpeg"
